@@ -7,9 +7,8 @@
 figure;
 
 % The SixLinkRobot function computes layout of all of the links in the
-% robot as a function of the 6 configuration space parameters. You can
-% adjust these sixe numbers to see what happens.
-fv = SixLinkRobot ([-120 120 -120 120 -120 60]);%-120 120 -120 120 -120 60
+% robot as a function of the 6 configuration space parameters.  
+fv = SixLinkRobot ([-120 120 -120 120 -120 60]); 
 
 fv2 = SixLinkRobot ([0 0 0 0 0 180]);
 

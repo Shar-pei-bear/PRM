@@ -1,12 +1,12 @@
 function route = DijkstraGraph (edges,edge_lengths,start_node, dest_node)
 % Run Dijkstra's algorithm on a graph.
 % Inputs : 
-%   input_map : a logical array where the freespace cells are false or 0 and
-%      the obstacles are true or 1
-%   start_coords and dest_coords : Coordinates of the start and end cell
-%       respectively, the first entry is the row and the second the column.
+%   edges : an array with 2 rows each column has two integer entries (i, j) which encodes the fact that sample i and sample j are connected by an edge. 
+%   edge_length : the edge length of the graph
+%   start_node: the start node index of the graph
+%   dest_node : the destination node index of the graph
 % Output :
-%   route : An array containing the linear indices of the cells along the
+%   route : An array containing the linear indices of the nodes along the
 %    shortest route from start to dest or an empty array if there is no
 %    route.
 

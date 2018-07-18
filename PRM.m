@@ -58,8 +58,6 @@ for i = 2:nsamples
     % generated so far in the program.
     distances = Dist(x, samples(:,1:(i-1)));
     
-    %%% YOUR CODE HERE
-    %
     [sorted_distances, idx] = sort(distances);
     for index_i = 1:min(i-1, k)
         index_j = idx(index_i);
